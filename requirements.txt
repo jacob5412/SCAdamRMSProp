@@ -103,6 +103,7 @@ pathspec==0.12.1
 pexpect==4.9.0
 pillow==11.0.0
 platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1726613481435/work
+plotly==5.24.1
 pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1713667077545/work
 prometheus_client==0.21.0
 prompt_toolkit==3.0.48
@@ -128,6 +129,7 @@ ruamel.yaml @ file:///home/conda/feedstock_root/build_artifacts/ruamel.yaml_1728
 ruamel.yaml.clib @ file:///home/conda/feedstock_root/build_artifacts/ruamel.yaml.clib_1728724466132/work
 scikit-learn==1.5.2
 scipy==1.14.1
+seaborn==0.13.2
 Send2Trash==1.8.3
 setuptools==75.1.0
 six==1.16.0
@@ -135,6 +137,7 @@ sniffio==1.3.1
 soupsieve==2.6
 stack-data==0.6.3
 sympy==1.13.1
+tenacity==9.0.0
 terminado==0.18.1
 threadpoolctl==3.5.0
 tinycss2==1.4.0
