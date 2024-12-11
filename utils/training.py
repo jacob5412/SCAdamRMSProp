@@ -1,7 +1,6 @@
 import time
 
 import torch
-from sklearn.metrics import accuracy_score
 
 
 def train_model(
