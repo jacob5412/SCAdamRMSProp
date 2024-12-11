@@ -1,0 +1,86 @@
+{
+    "test_amsgrad_initialization": {
+        "weight": 10,
+        "depends": []
+    },
+    "test_amsgrad_step": {
+        "weight": 20,
+        "depends": []
+    },
+    "test_amsgrad_training": {
+        "weight": 70,
+        "depends": [
+            "test_amsgrad_step"
+        ]
+    },
+    "test_amsgrad_builtin_initialization": {
+        "weight": 10,
+        "depends": []
+    },
+    "test_amsgrad_builtin_step": {
+        "weight": 20,
+        "depends": []
+    },
+    "test_amsgrad_builtin_training": {
+        "weight": 70,
+        "depends": [
+            "test_amsgrad_builtin_step"
+        ]
+    },
+    "test_generic_adam_initialization": {
+        "weight": 10,
+        "depends": []
+    },
+    "test_generic_adam_step": {
+        "weight": 20,
+        "depends": []
+    },
+    "test_generic_adam_training": {
+        "weight": 70,
+        "depends": [
+            "test_generic_adam_step"
+        ]
+    },
+    "test_generic_adam_builtin_initialization": {
+        "weight": 10,
+        "depends": []
+    },
+    "test_generic_adam_builtin_step": {
+        "weight": 20,
+        "depends": []
+    },
+    "test_generic_adam_builtin_training": {
+        "weight": 70,
+        "depends": [
+            "test_generic_adam_builtin_step"
+        ]
+    },
+    "test_rmsprop_initialization": {
+        "weight": 10,
+        "depends": []
+    },
+    "test_rmsprop_step": {
+        "weight": 20,
+        "depends": []
+    },
+    "test_rmsprop_training": {
+        "weight": 70,
+        "depends": [
+            "test_rmsprop_step"
+        ]
+    },
+    "test_rmsprop_builtin_initialization": {
+        "weight": 10,
+        "depends": []
+    },
+    "test_rmsprop_builtin_step": {
+        "weight": 20,
+        "depends": []
+    },
+    "test_rmsprop_builtin_training": {
+        "weight": 70,
+        "depends": [
+            "test_rmsprop_builtin_step"
+        ]
+    }
+}

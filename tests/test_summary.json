@@ -1,0 +1,25 @@
+{
+    "total_tests": 18,
+    "passed_tests": 18,
+    "failed_tests": 0,
+    "details": {
+        "test_amsgrad_initialization": true,
+        "test_amsgrad_step": true,
+        "test_amsgrad_training": true,
+        "test_generic_adam_initialization": true,
+        "test_generic_adam_step": true,
+        "test_generic_adam_training": true,
+        "test_rmsprop_initialization": true,
+        "test_rmsprop_step": true,
+        "test_rmsprop_training": true,
+        "test_amsgrad_builtin_initialization": true,
+        "test_amsgrad_builtin_step": true,
+        "test_amsgrad_builtin_training": true,
+        "test_rmsprop_builtin_initialization": true,
+        "test_rmsprop_builtin_step": true,
+        "test_rmsprop_builtin_training": true,
+        "test_generic_adam_builtin_initialization": true,
+        "test_generic_adam_builtin_step": true,
+        "test_generic_adam_builtin_training": true
+    }
+}
