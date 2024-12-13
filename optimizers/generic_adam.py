@@ -20,26 +20,22 @@ class GenericAdam(optim.Optimizer):
                 grad = p.grad.data
                 state = self.state[p]
 
-                # State initialization
                 if len(state) == 0:
                     state["step"] = 0
-                    state["m"] = torch.zeros_like(p.data)  # First moment
-                    state["v"] = torch.zeros_like(p.data)  # Second moment
+                    state["m"] = torch.zeros_like(p.data)
+                    state["v"] = torch.zeros_like(p.data)
 
                 m, v = state["m"], state["v"]
                 beta, r, epsilon = group["beta"], group["r"], group["epsilon"]
 
-                # Update step
                 state["step"] += 1
                 t = state["step"]
-                alpha_t = group["lr"] / (t**0.5)  # Decay learning rate dynamically
-                theta_t = 1 - ((0.001 + 0.999 * r) / (t**r))  # Dynamic theta
+                alpha_t = group["lr"] / (t**0.5)
+                theta_t = 1 - ((0.001 + 0.999 * r) / (t**r))
 
-                # Update moments
-                m.mul_(beta).add_(1 - beta, grad)  # First moment
-                v.mul_(theta_t).addcmul_(1 - theta_t, grad, grad)  # Second moment
+                m.mul_(beta).add_(1 - beta, grad)
+                v.mul_(theta_t).addcmul_(1 - theta_t, grad, grad)
 
-                # Parameter update
                 p.data.addcdiv_(-alpha_t, m, (v.sqrt() + epsilon))
 
         return loss
